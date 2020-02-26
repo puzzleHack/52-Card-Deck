@@ -6,8 +6,7 @@
 //  Copyright © 2020 noncreature0714. All rights reserved.
 //
 
-enum Number {
-
+enum Rank: Int {
     case Ace
     case two
     case three
@@ -21,4 +20,20 @@ enum Number {
     case Jack
     case Queen
     case King
+    
+    static let allValues = [
+        Ace,
+        two,
+        three,
+        four,
+        five,
+        six,
+        seven,
+        eight,
+        nine,
+        ten,
+        Jack,
+        Queen,
+        King
+    ]
 }

@@ -13,8 +13,36 @@ class Deck {
     
     
     init(){
+        for suite in Suite.allValues {
+            for rank in Rank.allValues {
+                print("suite: \(suite.rawValue) and rank \(rank.rawValue)")
+            }
+        }
+        
+//        print("some card \(decod)")
+    }
+    
+    func shuffle() {
         
     }
     
+    func cut(at cutLocation: Int ) {
+        
+    }
     
+    func sort() {
+        
+    }
+    
+    func reset() {
+        
+    }
+    
+    func deal() -> Card {
+        return Card(card: "🂡")
+    }
+    
+    func peek() -> Card {
+        return Card(card: "🂽")
+    }
 }

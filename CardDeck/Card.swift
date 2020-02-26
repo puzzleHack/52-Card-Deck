@@ -7,11 +7,9 @@
 //
 
 class Card {
-    let house: Int
-    let number: Int
+    let card: String;
     
-    init(house h: Int, number n: Int) {
-        house = h
-        number = n
+    init(card c: String) {
+        card = c
     }
 }
