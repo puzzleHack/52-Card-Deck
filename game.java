@@ -32,8 +32,16 @@ class Card {
 }
 
 public class game {
+	
+  public static final int NUMBER_OF_CARDS_DEALT = 7;
 
   public static ArrayList<Card> deck = new ArrayList<Card>();
+  
+  // Players
+  public static ArrayList<Card> playerOne = new ArrayList<Card>();
+  public static ArrayList<Card> playerTwo = new ArrayList<Card>();
+  public static ArrayList<Card> playerThree = new ArrayList<Card>();
+  public static ArrayList<Card> playerFour = new ArrayList<Card>();
 
   public static void main(String[] args) {
 
@@ -108,4 +116,30 @@ public class game {
     }
     deck = newDeck;
   }
+  
+  public static Card peek() {
+	  return deck.get(0);
+  }
+  
+  public static void cut() {
+	  // TODO
+  }
+  
+  public static void deal() {
+	  shuffle();
+	  cut();
+	  
+	  ArrayList<ArrayList<Card>> players = new ArrayList<ArrayList<Card>>();
+	  players.add(playerOne);
+	  players.add(playerTwo);
+	  players.add(playerThree);
+	  players.add(playerFour);
+	  
+	  for(int i = 0; i < NUMBER_OF_CARD_DEALT; i++) {
+		  for(ArrayList<Card> player : players) {
+			  player.add(deck.remove(0));
+		  }
+	  }
+  }
+  
 }
