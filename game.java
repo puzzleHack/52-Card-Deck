@@ -1,3 +1,6 @@
+/*This file was made by Hannah Connolly and Dallas Zinn on 2/25/20 as part of a puzzleHack club meeting
+* to practice interview coding questions
+*/
 
 import java.util.ArrayList;
 import java.util.Collections;
